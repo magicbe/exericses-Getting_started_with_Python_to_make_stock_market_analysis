@@ -1,1 +1,2 @@
-"# exericses-Getting_started_with_Python_to_make_stock_market_analysis" 
+# 線上課程 - Python 入門到製作股市分析 - 練習
+https://www.udemy.com/python-stock-data/
