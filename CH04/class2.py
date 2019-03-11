@@ -1,3 +1,6 @@
-cookies = 20
-number = 10 / (5 * cookies +2)
-print(number)
+ShoesCost = int(input('成本：'))
+MarketPrice = int(input('價格：'))
+Order = int(input('訂單：'))
+
+ShoesProfit = (MarketPrice - ShoesCost) * Order
+print('淨利：', ShoesProfit)
