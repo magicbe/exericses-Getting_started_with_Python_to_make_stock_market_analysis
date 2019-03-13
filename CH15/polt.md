@@ -11,7 +11,7 @@ style.use(‘grayscale’)
 style.use(‘seaborn-colorblind’)
 ```
 
-重點整理
+## 重點整理
 
 - Python--matplotlib繪圖可視化知識點整理：https://segmentfault.com/a/1190000005104723
 - Customizing Matplotlib: Configurations and Stylesheets：https://jakevdp.github.io/PythonDataScienceHandbook/04.11-settings-and-stylesheets.html
