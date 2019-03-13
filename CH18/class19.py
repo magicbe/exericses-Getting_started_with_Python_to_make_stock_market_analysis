@@ -13,8 +13,14 @@ price = data['Close']
 moving_avg = price.rolling(20).mean()
 moving_avg_mstd = price.rolling(20).std()
 
-top = plt.subplot(211)
-bottom = plt.subplot(212)
+# 五五分
+# top = plt.subplot(211)
+# bottom = plt.subplot(212)
+
+# 九二分
+top = plt.subplot2grid((12, 9),(0, 0), rowspan=9, colspan=9)
+bottom = plt.subplot2grid((12, 9),(10, 0), rowspan=2, colspan=9)
+
 
 data = data.reset_index()
 # 沒有開市的日期不顯示
