@@ -5,7 +5,8 @@ from matplotlib import style
 import matplotlib.dates as mdates
 import pandas as pd
 
-style.use('ggplot')
+# 黑背景
+style.use('dark_background')
 Analysis = 'AAPL.csv'
 data = pd.read_csv(Analysis, parse_dates=True, index_col='Date')
 price = data['Close']
@@ -21,6 +22,8 @@ moving_avg_mstd = price.rolling(20).std()
 top = plt.subplot2grid((12, 9),(0, 0), rowspan=9, colspan=9)
 bottom = plt.subplot2grid((12, 9),(10, 0), rowspan=2, colspan=9)
 
+# 網格
+top.grid(which='both', alpha=0.3)
 
 data = data.reset_index()
 # 沒有開市的日期不顯示
