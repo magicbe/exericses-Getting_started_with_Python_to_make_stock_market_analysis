@@ -13,5 +13,3 @@ moving_avg = price.rolling(20).mean()
 plt.plot(price, color='b')
 plt.plot(moving_avg, color='r')
 plt.show()
-
-
